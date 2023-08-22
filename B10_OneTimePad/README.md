@@ -9,3 +9,4 @@ The user must first run the `keyDriver` to create the key. After making the key 
 This program has six separate classes, `KeyGenerator`, `Encryptor`, and `Decryptor`, and a driver associated with each of those classes. The drivers are responsible for everything regarding the files, such as reading, writing, opening, closing, etc. The `keyDriver` creates a file using the inputs from the user, such as the name of the file, how many n values and starting positions.
 
 UML Diagram:
+![B10_OneTimePadDiagram.png](https://github.com/fqkammona/SWD-Projects/blob/main/UML-Diagrams/B10_OneTimePadDiagram.png)
