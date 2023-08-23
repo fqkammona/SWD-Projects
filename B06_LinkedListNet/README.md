@@ -1,11 +1,11 @@
 ## Problem Statement
-Create a networking program where there is a client-server connection and the server is the only one who has access to the linked list and the client request updates to the linked list such as deleting and adding new items. This linked list should be an enhanced linked list that allows for insertion and deletion from anywhere in the list.
+Develop a networking program that establishes a client-server connection where the server exclusively manages an enhanced linked list. The client can request various operations on this linked list, such as item insertion and deletion at any position within the list.
 
 ## User Documentation
-Once the programs have started up the connection will be set and the user can follow the instructions coming from the server. There is an issue with the end program button where the client is required to press the button twice to terminate the connection. The textbox won't be editable until the adding item or deleting item is selected. 
+Upon starting the program, a connection is established between the client and the server, and the user can proceed by following the server's instructions. Please note that the "End Program" button requires two clicks to terminate the connection. The text box for adding or deleting items will only become editable when either the "Add Item" or "Delete Item" options are selected.
 
 ## Developer Documentation
-The linked list is an enhanced list so when the user request for an item to be added they must state where exactly they would like for it to be added. The form for the client is a gridbaglayout so there is a lot of code to create that layout in the `ClientWithGUIS` class. There are some issues with instruction parts but those can be solved later on. The foundation and layout for them are built. 
+The managed linked list is an enhanced version, allowing for insertion and deletion at any position. Clients must specify the exact location for each insert or delete operation. The client-side interface uses a `GridBagLayout`, implemented in the `ClientWithGUIS` class, making the layout code extensive. While some issues remain with the instruction components, the fundamental layout and functionalities are already in place and can be refined later.
 
 UML Diagram:
 ![B06_LinkedListNetDiagram.png](https://github.com/fqkammona/SWD-Projects/blob/main/UML-Diagrams/B06_LinkedListNetDiagram.png)
