@@ -1,14 +1,13 @@
 ## Problem Statement
-
-Using Java Swing creates a quiz GUI for students in an elementary school using different GUI components such as Checkbox, Radio Button, Dropdown Box, and Lists. The program must have at least 5 questions with at least 4 choices to answer. In addition, the program must also have an Acknowledgement box verifying the student did not cheat, the student is required to check the acknowledgment box before they are allowed to submit and see the quiz results. 
+Create a quiz application for elementary school students using Java Swing. The application should include a variety of GUI components such as checkboxes, radio buttons, dropdown boxes, and lists. The quiz must consist of a minimum of 5 questions, each offering at least 4 multiple-choice answers. Additionally, the application must feature an acknowledgment checkbox that the student must check to confirm they have not cheated. This acknowledgment is mandatory before the student can submit the quiz and view the results.
 
 ## User Documentation
-
-Once the user starts the program they are prompted to answer 5 different elementary math questions. They are not required to answer any question, the only requirement is the acknowledgment checkbox at the end of the quiz. Once the user has submitted the quiz the results frame will show a summary of the examination. The summary displays all the questions with the correct answers as well as the answers that the user submitted or the program will display unanswered if no answer was given. 
+Upon launching the application, the user is presented with 5 elementary-level math questions. Answering the questions is optional; however, checking the acknowledgment checkbox at the end of the quiz is required for submission. After submission, a results frame will appear summarizing the student's performance. This summary will display each question along with its correct answer and the student's chosen answer. If a question is left unanswered, the summary will indicate so.
 
 ## Developer Documentation
+The program architecture includes an abstract class named Components, serving as a template for all the GUI components used in the Quiz class. This design choice simplifies the process of creating different types of components by adhering to a consistent template. The subclasses derived from Components are Checkbox, RadioButton, DropdownBox, and ListBox.
 
-This program has an abstract class `Components` which is a template for all components created for the `Quiz` class. The reasoning for this is that it allows a much easier ability to create many types of a certain component and seeing as all the components follow the same template, which will be explained further on, it's overall better software design. The sub-classes of `Components` are the following components, `Checkbox`, `Radiobutton`, `DropdownBox`,  and `ListBox`. As stated before all components follow the same template, all of the sub-classes had a constructor that took an array of correct answers, an array of all answers, and a string with the prompt for the user. The sub-classes called different methods of the superclass to create their component in a JPanel that was then called in the `Quiz` class. The same design is later used in the results frame. 
+Each subclass constructor takes three parameters: an array of correct answers, an array of all possible answers, and a string containing the user prompt. These subclasses call various methods from the superclass to construct their respective components, which are then encapsulated within a JPanel and integrated into the Quiz class. The same architectural pattern is replicated in the results frame for a cohesive design.
 
 
 UML Diagram: 
