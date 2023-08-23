@@ -1,12 +1,11 @@
 ## Problem Statement
-
-This project creates two different kinds of barcodes, POSTNET barcode, which is used by the post office to sort mail, and UPC-A, which is used for tracking items at grocery stores. POSTNET generates a barcode given a ZIP or a ZIP+4, or a ZIP+4+delivery and UPC-A generates a barcode given an eleven-digit product code. Both, POSTNET and UPC-A have a decoder class that reverts what they do and all classes have a driver class and an associated tester class.  
+This project aims to develop two types of barcodes: POSTNET, primarily used by postal services for mail sorting, and UPC-A, commonly used in grocery stores for item tracking. The POSTNET barcode generator accepts ZIP, ZIP+4, or ZIP+4+delivery codes, while the UPC-A generator requires an eleven-digit product code. Both barcode types come with corresponding decoder classes, as well as driver and tester classes.
 
 ## User Documentation
-For the POSTNET encoder, the user can enter the ZIP, a ZIP+4, or a ZIP+4+delivery and the barcode will be displayed. After receiving that code they can then use the decoder class `PostNetDecoder` and be able to do a round-trip, meaning get the ZIP that was originally given. The same follows with the UPC-A classes. 
+For the POSTNET encoder, users can input either a ZIP code, ZIP+4 code, or ZIP+4+delivery code to generate a barcode. Subsequently, the `PostNetDecoder` class can be used to revert the barcode back to its original ZIP code, completing a round-trip conversion. A similar workflow exists for the UPC-A barcode generation and decoding.
 
 ## Developer Documentation
-Java Expressions are used in the POSTNET encoder and decoder and there are also some recursive algorithms used for the check digit. There is another recursive algorithm in the UPC-A decoder to find which side of the barcode the binary string is on so that the program knows which array to use. 
+Java expressions are employed in both the POSTNET encoder and decoder classes. Recursive algorithms are utilized to calculate the check digit in the POSTNET system. In the UPC-A decoder, another recursive algorithm identifies which side of the barcode a binary string resides on, enabling the program to select the appropriate array for decoding.
 
 UML Diagram:
 ![A15_BarcodesDiagram.png](https://github.com/fqkammona/SWD-Projects/blob/main/UML-Diagrams/A15_BarcodesDiagram.png)
